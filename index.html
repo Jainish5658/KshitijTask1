@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saraswati Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+     
+     <a href="#" class="brand">Saraswati</a>
+     <div class="menu">
+        <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="#section-two">Home</a>
+        <a href="#section-three">Best Sellers</a>
+        <a href="#section-four">Recommendations</a>
+        <a href="#section-five">Our Reviews</a>
+        <a href="#">Contact Us</a>
+     </div>
+     <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+     </div>
+
+
+    </header>
+    <section class="section-main">
+      <h1>Saraswati Book Store</h1>
+
+    </section>
+    <section class="section-two" id="section-two">
+        <h2>Saraswati Book Store</h2>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt tempore iusto mollitia dolorum sunt quam laudantium praesentium voluptate, tenetur nam.</p> 
+        <!-- <img src="profile.jpg" alt="" style="width: 1000px; height: 700px; margin-left: 600px;"> -->
+         
+        <div class="photos">
+            <img src="lib2.jpg" alt="" style="height: 500px; width: 500px">
+            <img src="lib4.jpg" alt="" style="height: 500px; width: 500px">
+            <img src="lib3.jpg" alt="" style="height: 500px; width: 500px">
+        </div>
+    </section>
+
+    <section class="section-three" id="section-three">
+        <h2>Our Best Sellers</h2>
+         <div class="booksellcard">
+            <a href="#" id="books">Book 1 </a>
+            <a href="#"id="books">Book 2</a>
+            <a href="#"id="books">Book 3</a>
+            <a href="#"id="books">Book 4</a>
+            <a href="#"id="books">Book 5</a>
+         </div>  
+      
+
+
+    </section>
+     
+    <section class="section-four" id="section-four">
+        <h2>Recommendations</h2>
+         <div class="booksellcard">
+            <a href="#" id="books">Book 1 </a>
+            <a href="#"id="books">Book 2</a>
+            <a href="#"id="books">Book 3</a>
+            <a href="#"id="books">Book 4</a>
+         </div>  
+         <h1><br></h1>
+         <div class="booksellcard">
+            <a href="#" id="books">Book 1 </a>
+            <a href="#"id="books">Book 2</a>
+            <a href="#"id="books">Book 3</a>
+            <a href="#"id="books">Book 4</a>
+         </div>
+
+
+    </section>
+    <section class="section-five" id="section-five">
+        <h2>Reviews</h2>
+        <div class="rev">
+     <div class="personrev">
+         <div class="cards1">
+              <h5  class="cards3">Jainish </h5>
+              <h5 class="cards3">Jai Ho</h5>
+         </div>
+         <div class="cards2">
+              <h5 class="cards3">Kaise Ho</h5>
+               <h5 class="cards3">Apun</h5>
+         </div>
+     </div> 
+     <div class="formrev">
+       <h4> Give Your Review </h4> <br>
+         <input type="text" title="name1" checked  class="name1" placeholder="Name">
+         <input type="text" title="name" checked  class="name"   placeholder="Email">
+
+         <input type="text" title="name" checked  class="name" placeholder="Review">
+
+         <input type="text" title="name" checked  class="name" placeholder="Phone Number">
+          <br>
+         <Button class="btn">Submit</Button> 
+
+     </div>    
+    </div>
+    </section>
+
+    <!-- <section class="section-six">
+     <h2>Footer</h2> -->
+     <section id="footer">
+        <div class="footer">
+        <h4> Copyright © 2022 &nbsp;for Saraswatibooktore.com &nbsp;All Rights reserved. </h4>
+        <div class="icons">
+     <i class="fa-brands fa-twitter fa-fw " aria-hidden="true"></i>
+     <i class="fa-brands  fa-facebook fa-fw" aria-hidden="true"></i> 
+     <i class="fa-brands  fa-instagram fa-fw" aria-hidden="true"></i>
+</div>
+        <!-- <span class="links">
+           <a href="#top" style="text-decoration:none;"> Home </a> 
+        </span>
+        <span class="links">
+         <a href="" target="blank" style="text-decoration:none;">Terms and Conditions </a> 
+        </span>
+        <span class="links">
+        <a href="" target="blank" style="text-decoration:none;"> Privacy Policy </a>   
+        </span> -->
+    </div>
+    </section>
+
+    <!-- </section> -->
+
+
+
+
+
+ <script type="text/javascript">
+window.addEventListener("scroll", function(){
+var header = document.querySelector("header");
+header.classList.toggle('sticky', window.scrollY > 0);
+});
+
+
+var menu = document.querySelector('.menu');
+var menuBtn = document.querySelector('.menu-btn');
+var closeBtn = document.querySelector('.close-btn');
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.add('active');
+});
+
+closeBtn.addEventListener("click", () => {
+    menu.classList.remove('active');
+});
+
+
+ </script>
+
+</body>
+</html>
